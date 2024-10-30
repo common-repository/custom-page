@@ -1,0 +1,84 @@
+/* General Form Layout */
+div.add-element *, div.update-elements *{
+	font-size: 10px;
+	vertical-align: middle;
+	font-family: helvetica, arial, sans-serif;
+}
+div.add-element h3, div.update-elements h3{
+	font-weight: bold;
+	font-size: 12px;
+	text-align: left;
+}
+div.update-elements label, div.add-element label{
+	display: inline-block;
+	min-width: 90px;
+	font-weight: bold;
+}
+tr.element td, tr.element-editor td{
+	padding: 5px;
+}
+tr.element input, tr.element select, tr.element button{
+	padding: 0;
+	border: 1px solid #CCC;
+	max-width: 150px;
+}
+td.display label{
+	min-width: auto;
+}
+td.refresh{
+	text-align: right;
+}
+td.submit input, td.submit input:hover{
+	padding: 1em;
+	float: right;
+}
+td.text-padding input{
+	width: 30px;
+}
+/* Select Element layout*/
+div.select-actions a, div.select-elements a{
+	font-size: 12px;
+	color: #00F;
+	text-decoration: none;
+	background: #FFF;
+	padding: 10px;
+	display: inline-block;
+	border: 1px solid #CCC;
+}
+div.select-elements{
+	position: fixed;
+	left: 1px;
+	bottom: 50px;
+	width: 500px;
+	z-index: 1000;
+}
+div.select-elements a{
+	margin-bottom: 5px;
+}
+div.select-actions{
+	position: fixed;
+	left: 1px;
+	bottom: 1px;
+	z-index: 1000;
+}
+div.select-elements a.close-select-elements, div.select-actions a.close-element-form{
+	color: #F00;
+}
+div.select-actions a.open-element-form{
+	color: #060;
+}
+/* Main Function Effect */
+div.selected-element{
+	background: #666;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	-khtml-opacity: 0.6;
+	-moz-opacity: 0.6;
+}
+span.id_error{
+	padding-left: 10px;
+	color: #F00;
+}
+span.element-display-none{
+	display: inline-block
+}
